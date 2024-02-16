@@ -5,25 +5,25 @@ import hamburger from "../images/icons8-hamburger-50.png"
 export function Nav (){
     return(
         <nav className="navbar">
-            <img className="img" src={logo} alt="logo"></img>
+            <img className="logo-nav" src={logo} alt="logo"></img>
             <button className="toggle-button">
                 <img className="hamburger" src={hamburger} />
             </button>
             <ul className="navigation-elements">
                 <li>
-                    <a>Home</a>
+                    <a className="nav-link">Home</a>
                 </li>
                 <li>
-                    <a>About</a>
+                    <a className="nav-link">About</a>
                 </li>
                 <li>
-                    <a>Reservation</a>
+                    <a className="nav-link">Reservation</a>
                 </li>
                 <li>
-                    <a>Order online</a>
+                    <a className="nav-link">Order online</a>
                 </li>
                 <li>
-                    <a>Login</a>
+                    <a className="nav-link">Login</a>
                 </li>
             </ul>
         </nav>

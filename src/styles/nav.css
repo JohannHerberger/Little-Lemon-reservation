@@ -5,11 +5,12 @@
     justify-content: center;
 }
 
-.img{
+.logo-nav{
     width: 200px;
 }
 
 .navigation-elements{
+    font-family: "Karla";
     list-style: none;
     display: flex;
     margin-left: 40px;
@@ -17,7 +18,7 @@
     font-size: 17px;
 }
 
-a{
+.nav-link{
     margin-right: 40px;
 }
 
@@ -32,16 +33,16 @@ a{
     border: none;
 }
 
-a:hover{
+.nav-link:hover{
     cursor: pointer;
     color: gray;
 }
 
 @media (max-width:642px){
-    .img{
+    .logo-nav{
         width: 150px;
     }
-    img{
+    .hamburger{
         width: 40px;
     }
     .navbar{
@@ -66,11 +67,15 @@ a:hover{
     }
     .toggle-button{
         display: flex;
+        right: 30px;
     }
 }
 
 @media (min-width: 1025px) {
     .navbar{
         height: 100px;
+    }
+    .navigation-elements{
+        font-size: 19px;
     }
 }
