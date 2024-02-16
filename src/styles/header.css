@@ -1,4 +1,67 @@
 .header{
-    background-color: #495e57;
-    height: 500px;
+    background: linear-gradient(
+        to bottom,
+        #495E57, 
+        #495E57 80%, 
+        white 20%, 
+        white
+    );
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-text-container{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+    width: 320px;
+}
+
+.header-h1{
+    padding: 0px;
+    margin: 0px;
+    font-size: 64px;
+    color: #F4CE14;
+    font-family: "Markazi Text";
+    line-height: 30px;
+}
+
+.header-h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    color: white;
+    font-family: "Markazi Text";
+}
+
+.header-text{
+    margin-top: 13px;
+    color: white;
+    font-family: "Karla";
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header-button{
+    width: 205px;
+    margin-top: 8px;
+    display: flex;
+    border-radius: 15px;
+    font-size: 21px;
+    font-family: "Karla";
+    font-weight: 800;
+    padding: 10px 23px;
+    border: none;
+    background-color: #F4CE14;
+}
+
+.header-pic{
+    margin-top: 30px;
+    margin-left: 110px;
+    height: 360px;
+    width: 340px;
+    border-radius: 20px;
+    object-position: center;
 }
