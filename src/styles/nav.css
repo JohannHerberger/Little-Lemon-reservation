@@ -1,8 +1,8 @@
 .navbar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    grid-template-rows: 6em;
+    justify-content: center;
 }
 
 .img{
@@ -10,9 +10,67 @@
 }
 
 .navigation-elements{
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    font-weight: bold;
-    margin-left: 5px;
+    list-style: none;
+    display: flex;
+    margin-left: 40px;
+    font-weight: 900;
     font-size: 17px;
+}
+
+a{
+    margin-right: 40px;
+}
+
+.toggle-button{
+    position: absolute;
+    right: 50px;
+    top: 18px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width:642px){
+    .img{
+        width: 150px;
+    }
+    img{
+        width: 40px;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .toggle-button{
+        display: flex;
+        top: 10px;
+        right: 10px;
+    }
+    .navigation-elements{
+        display: none;
+    }
+}
+
+@media (min-width:642px) and (max-width: 1025px){
+    .navigation-elements{
+        display: none;
+    }
+    .navbar{
+        height: 80px;
+    }
+    .toggle-button{
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar{
+        height: 100px;
+    }
 }
