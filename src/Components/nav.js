@@ -1,24 +1,19 @@
+import "../styles/nav.css"
+import logo from "../images/Logo.svg"
+
 export function Nav (){
     return(
-        <div>
-            <img src="./Logo.svg" alt="logo"></img>
-            <ul>
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    <a>About</a>
-                </li>
-                <li>
-                    <a>Reservation</a>
-                </li>
-                <li>
-                    <a>Oder Online</a>
-                </li>
-                <li>
-                    <a>Login</a>
-                </li>
-            </ul>
-        </div>
+        <nav className="navbar">
+            <div></div>
+            <img className="img" src={logo} alt="logo"></img>
+            <div className="navigation-elements">
+                <a>Home</a>
+                <a>About</a>
+                <a>Reservation</a>
+                <a>Oder Online</a>
+                <a>Login</a>
+            </div>
+            <div></div>
+        </nav>
     )
 }

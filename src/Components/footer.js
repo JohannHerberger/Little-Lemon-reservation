@@ -1,34 +1,37 @@
+import "../styles/footer.css";
+import logo from "../images/Logo.svg"
+
 export function Footer (){
     return(
-        <div>
-            <img src=""/>
+        <footer className="footer">
             <div>
-                <a></a>
+                <img src={logo} alt="logo" />
+                <a>Navigation</a>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Reservation</li>
+                    <li>Order Online</li>
+                    <li>Login</li>
                 </ul>
             </div>
             <div>
-                <a></a>
+                <a>Contact</a>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Adress</li>
+                    <li>Phone number</li>
+                    <li>Email</li>
                 </ul>
             </div>
             <div>
-                <a></a>
+                <a>Social Media links</a>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
                 </ul>
             </div>
-        </div>
+        </footer>
     )
 }
