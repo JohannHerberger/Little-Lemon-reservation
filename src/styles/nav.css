@@ -41,12 +41,14 @@
 @media (max-width:642px){
     .logo-nav{
         width: 150px;
+        margin-left: 20px;
     }
     .hamburger{
         width: 40px;
     }
     .navbar{
         height: 60px;
+        justify-content: start;
     }
     .toggle-button{
         display: flex;

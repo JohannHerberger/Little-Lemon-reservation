@@ -58,9 +58,13 @@
     }
     .logo-footer{
         width: 90px;
-        margin-left: 130px;
+        margin-left: 60px;
     }
     .footer-container{
         flex-direction: column;
+        margin-left: 0px;
+    }
+    .footer-list{
+        padding-left: 0px;
     }
 }
