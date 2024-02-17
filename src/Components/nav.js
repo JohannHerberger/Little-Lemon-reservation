@@ -17,6 +17,9 @@ export function Nav (){
                     <a className="nav-link">About</a>
                 </li>
                 <li>
+                    <a className="nav-link">Menu</a>
+                </li>
+                <li>
                     <a className="nav-link">Reservation</a>
                 </li>
                 <li>

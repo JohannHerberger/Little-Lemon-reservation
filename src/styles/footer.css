@@ -46,7 +46,7 @@
         width: 120px;
     }
     .footer-wrapper{
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }
 
@@ -58,7 +58,7 @@
     }
     .logo-footer{
         width: 90px;
-        margin-left: 94px;
+        margin-left: 130px;
     }
     .footer-container{
         flex-direction: column;
