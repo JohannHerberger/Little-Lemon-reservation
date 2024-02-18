@@ -1,0 +1,113 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    align-items: center;
+}
+
+.main-head-container{
+    display: flex;
+    align-items: center;
+    width: 930px;
+    justify-content: space-between;
+}
+
+.main-heading{
+    font-size: 64px;
+    font-family: "Markazi Text";
+    margin-right: 280px;
+}
+
+.main-button{
+    background-color: #F4CE14;
+    border: none;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15px 35px;
+    font-family: "Karla";
+    border-radius: 15px;
+}
+
+.main-cont-container{
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+}
+
+.main-cont-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 25px;
+}
+
+.main-cont-head > h5 {
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0px;
+}
+
+.main-price{
+    color: #EE9772;
+    font-weight: 700;
+}
+
+.main-text{
+    font-family: "Karla";
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.main-cont-button{
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    width: 175px;
+    margin-top: 40px;
+    margin-left: 25px;
+    padding: 15px 12px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-cont-button1{
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Karla";
+    background-color: #F4CE14;
+    width: 175px;
+    margin-top: 23px;
+    margin-left: 25px;
+    padding: 15px 12px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-icon{
+    width: 20px;
+    margin-left: 15px;  
+}
+
+.dish-container{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    background-color: rgb(232, 232, 232);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main-pic{
+    width: 275px;
+    height: 230px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
