@@ -33,7 +33,7 @@ export function Main (){
                         <img className="delivery-icon" src={delivery}/>
                     </button>
                 </div>
-                <div className="dish-container">
+                <div className="dish-container1">
                     <img className="main-pic" src={bruchetta}/>
                     <div className="main-cont-head">
                         <h5>Bruchetta</h5>
@@ -45,7 +45,7 @@ export function Main (){
                         seasoned with salt and olive 
                         oil.
                     </a>
-                    <button className="main-cont-button">
+                    <button className="main-cont-button2">
                         <a className="delivery-text">Order delivery</a>
                         <img className="delivery-icon" src={delivery}/>
                     </button>

@@ -8,7 +8,6 @@
 .main-head-container{
     display: flex;
     align-items: center;
-    width: 930px;
     justify-content: space-between;
 }
 
@@ -31,7 +30,6 @@
 .main-cont-container{
     display: flex;
     justify-content: space-between;
-    width: 940px;
 }
 
 .main-cont-head{
@@ -59,7 +57,7 @@
     margin-right: 25px;
 }
 
-.main-cont-button{
+.main-cont-button, .main-cont-button2{
     border: none;
     font-size: 17px;
     font-weight: 700;
@@ -96,7 +94,7 @@
     margin-left: 15px;  
 }
 
-.dish-container{
+.dish-container, .dish-container1{
     display: flex;
     flex-direction: column;
     width: 275px;
@@ -105,9 +103,155 @@
     border-top-left-radius: 20px;
 }
 
+.dish-container1{
+    margin: 0px 50px;
+}
+
 .main-pic{
     width: 275px;
     height: 230px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+
+@media (max-width: 1025px) and (min-width: 642px){
+    .main{
+        height: 600px;
+    }
+    .main-button{
+        font-size: 19px;
+        padding: 15px 20px;
+    }
+    .main-heading{
+        font-size: 45px;
+        margin-right: 100px;
+    }
+    .main-head-container{
+        width: 630px;
+    }
+    .dish-container, .dish-container1{
+        width: 190px;
+        height: 400px;
+    }
+    .dish-container1{
+        margin: 0px;
+    }
+    .main-pic{
+        width: 190px;
+        height: 170px;
+    }
+    .main-cont-head{
+        margin: 13px 13px;
+    }
+    .main-cont-head > h5{
+        font-size: 16px;
+    }
+    .main-price{
+        font-size: 15px;
+    }
+    .main-text{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .main-cont-button{
+        font-size: 14px;
+        width: 150px;
+        margin-top: 26px;
+        margin-left: 10px;
+        padding: 8px 12px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    .main-cont-button1{
+        font-size: 14px;
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 8px 12px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    .main-cont-button2{
+        font-size: 15px;
+        width: 150px;
+        margin-top: 43px;
+        margin-left: 10px;
+        padding: 8px 10px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+    }
+    .delivery-icon{
+        width: 16px;
+    }
+    .main-cont-container{
+        width: 630px;
+    }
+}
+
+@media (max-width: 642px){
+    .main{
+        height: 1300px;
+        align-items: start;
+    }
+    .main-cont-container{
+        flex-direction: column;
+        align-items: start;
+        margin-left: 35px;
+    }
+    .main-head-container{
+        align-items: start;
+        justify-content: start;
+        margin-left: 35px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main-heading{
+        margin: 0px;
+        font-size: 30px;
+    }
+    .main-button{
+        font-size: 15px;
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+    .dish-container, .dish-container1{
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 210px;
+        height: 350px;
+    }
+    .main-pic{
+        width: 210px;
+    }
+    .main-cont-head{
+        margin: 10px 10px;
+    }
+    .main-cont-head > h5{
+        font-size: 16px;
+    }
+    .main-price{
+        font-size: 14px;
+    }
+    .main-text{
+        font-size: 12px;
+        margin: 5px 10px;
+    }
+    .main-cont-button, .main-cont-button1, .main-cont-button2{
+        font-size: 14px;
+        padding: 10px 8px;
+        width: 150px;
+        margin-left: 10px;
+    }
+    .main-cont-button{
+        margin-top: 5px;
+    }
+    .main-cont-button2{
+        margin-top: 0px;
+    }
+    .delivery-icon{
+        width: 15px;
+    }
 }
