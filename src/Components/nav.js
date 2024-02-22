@@ -1,6 +1,7 @@
 import "../styles/nav.css"
 import logo from "../images/Logo.svg"
 import hamburger from "../images/icons8-hamburger-50.png"
+import { Link } from "react-router-dom"
 
 export function Nav (){
     return(
@@ -11,22 +12,22 @@ export function Nav (){
             </button>
             <ul className="navigation-elements">
                 <li>
-                    <a className="nav-link">Home</a>
+                    <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li>
-                    <a className="nav-link">About</a>
+                    <Link className="nav-link">About</Link>
                 </li>
                 <li>
-                    <a className="nav-link">Menu</a>
+                    <Link className="nav-link">Menu</Link>
                 </li>
                 <li>
-                    <a className="nav-link">Reservation</a>
+                    <Link to="/Reservation" className="nav-link">Reservation</Link>
                 </li>
                 <li>
-                    <a className="nav-link">Order online</a>
+                    <Link className="nav-link">Order online</Link>
                 </li>
                 <li>
-                    <a className="nav-link">Login</a>
+                    <Link className="nav-link">Login</Link>
                 </li>
             </ul>
         </nav>
