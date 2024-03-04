@@ -1,0 +1,5 @@
+.reservation-form{
+    display: grid;
+    gap: 20px;
+    max-width: 400px;
+}

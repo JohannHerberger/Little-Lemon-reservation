@@ -9,7 +9,7 @@ export function Main (){
         <main className="main">
             <div className="main-head-container">
                 <h1 className="main-heading">
-                    This week specials!
+                    This month specials!
                 </h1>
                 <button className="main-button">
                     Online Menu

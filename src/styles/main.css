@@ -14,7 +14,7 @@
 .main-heading{
     font-size: 64px;
     font-family: "Markazi Text";
-    margin-right: 280px;
+    margin-right: 255px;
 }
 
 .main-button{
@@ -101,7 +101,7 @@
     background-color: rgb(232, 232, 232);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
+    box-shadow: 2px 2px 2px rgb(199, 199, 199);}
 
 .dish-container1{
     margin: 0px 50px;
