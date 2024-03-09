@@ -20,7 +20,7 @@ export function Main (){
                     <img className="main-pic" src={salad}/>
                     <div className="main-cont-head">
                         <h5>Greek salad</h5>
-                        <a className="main-price">$12.99</a>
+                        <a className="main-price">$10.99</a>
                     </div>
                     <a className="main-text">
                         The famous greek salad of crspy lettuce, peppers, olives 
@@ -37,7 +37,7 @@ export function Main (){
                     <img className="main-pic" src={bruchetta}/>
                     <div className="main-cont-head">
                         <h5>Bruchetta</h5>
-                        <a className="main-price">$5.99</a>
+                        <a className="main-price">$7.99</a>
                     </div>
                     <a className="main-text">
                         Our Bruchetta is made from grilled bread that has been 
@@ -54,7 +54,7 @@ export function Main (){
                      <img className="main-pic" src={dessert}/>
                     <div className="main-cont-head">
                         <h5>Lemon Dessert</h5>
-                        <a className="main-price">$5.00</a>
+                        <a className="main-price">$4.99</a>
                     </div>
                     <a className="main-text">
                         This comes straight from 
