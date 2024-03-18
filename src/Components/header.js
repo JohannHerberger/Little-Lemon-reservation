@@ -1,7 +1,11 @@
 import "../styles/header.css";
 import headerLogo from "../images/Bildschirmfoto 2024-02-16 um 23.33.08.png"
+import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 export function Header (){
+    const navigate = useNavigate();
+
     return(
         <header className="header">
             <div className="header-text-container">
@@ -11,8 +15,8 @@ export function Header (){
                     We are a family owned Mediterranean restaurant,
                     focused on traditional recipes served with a mordern twist.
                 </a>
-                <button className="header-button">
-                    Reserve a table
+                <button onClick={()=>navigate("/reservation")} className="header-button">
+                   Reserve a table
                 </button>
             </div>
             <img src={headerLogo} className="header-pic"/>

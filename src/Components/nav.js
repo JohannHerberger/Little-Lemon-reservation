@@ -15,19 +15,16 @@ export function Nav (){
                     <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li>
-                    <Link className="nav-link">About</Link>
+                    <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li>
-                    <Link className="nav-link">Menu</Link>
+                    <Link to="/menu" className="nav-link">Menu</Link>
                 </li>
                 <li>
-                    <Link to="/Reservation" className="nav-link">Reservation</Link>
+                    <Link to="/reservation" className="nav-link">Reservation</Link>
                 </li>
                 <li>
-                    <Link className="nav-link">Order online</Link>
-                </li>
-                <li>
-                    <Link className="nav-link">Login</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { Reservation } from "../Components/Reservation";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const ReservationFormContext = createContext()
 
@@ -16,9 +17,7 @@ export const ReservationFormProvider = ({children}) =>{
         secondName: "",
         email: "",
         phoneNumber: "",
-    })
-
-    const title = ["Reservation details", "About you"]
+    });
 
     const handleData = (event) => {
         const { name, value } = event.target;
@@ -36,7 +35,7 @@ export const ReservationFormProvider = ({children}) =>{
     console.log(page)
 
     return(
-        <ReservationFormContext.Provider value={{page, setPage, handleNext, handlePrev, data, setData, title, handleData}}>
+        <ReservationFormContext.Provider value={{page, setPage, handleNext, handlePrev, data, setData, handleData}}>
             <Reservation />
         </ReservationFormContext.Provider>
     )

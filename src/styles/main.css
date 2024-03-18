@@ -14,17 +14,7 @@
 .main-heading{
     font-size: 64px;
     font-family: "Markazi Text";
-    margin-right: 255px;
-}
-
-.main-button{
-    background-color: #F4CE14;
-    border: none;
-    font-weight: 800;
-    font-size: 24px;
-    padding: 15px 35px;
-    font-family: "Karla";
-    border-radius: 15px;
+    margin-right: 480px;
 }
 
 .main-cont-container{
@@ -63,14 +53,13 @@
     font-weight: 700;
     font-family: "Karla";
     background-color: #F4CE14;
-    width: 175px;
+    width: 150px;
     margin-top: 40px;
     margin-left: 25px;
     padding: 15px 12px;
     border-radius: 12px;
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-between;
 }
 
 .main-cont-button1{
@@ -79,19 +68,24 @@
     font-weight: 700;
     font-family: "Karla";
     background-color: #F4CE14;
-    width: 175px;
+    width: 150px;
     margin-top: 23px;
     margin-left: 25px;
     padding: 15px 12px;
     border-radius: 12px;
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-between;
 }
 
-.delivery-icon{
+.main-cont-button:hover, .main-cont-button1:hover, .main-cont-button2:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.menu-icon{
     width: 20px;
-    margin-left: 15px;  
+    margin-top: 2px;
+    margin-left: 12px;
 }
 
 .dish-container, .dish-container1{

@@ -45,16 +45,21 @@
 }
 
 .header-button{
-    width: 205px;
+    width: 201px;
     margin-top: 8px;
     display: flex;
     border-radius: 15px;
-    font-size: 21px;
+    font-size: 20px;
     font-family: "Karla";
     font-weight: 800;
-    padding: 10px 23px;
+    padding: 10px 25px;
     border: none;
     background-color: #F4CE14;
+}
+
+.header-button:hover{
+    cursor: pointer;
+    opacity: 70%;
 }
 
 .header-pic{
@@ -71,7 +76,7 @@
         display: none;
     }
     .header{
-        height: 160px;
+        height: 180px;
         align-items: center;
         background: none;
         background-color: #495E57;
