@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
-import { Reservation } from "../Components/Reservation";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+import { Reservation } from "../Components/old res/Reservation";
 
 export const ReservationFormContext = createContext()
 
@@ -8,8 +7,12 @@ export const ReservationFormProvider = ({children}) =>{
 
     const [page, setPage] = useState(0)
 
+    const today = new Date();
+    const date = today.setDate(today.getDate()+1);
+    const defaultValue = new Date(date).toISOString().split('T')[0]
+
     const [data, setData] = useState({
-        date: "",
+        date: defaultValue,
         time: "",
         occasion: "",
         guests: 1,
@@ -25,14 +28,12 @@ export const ReservationFormProvider = ({children}) =>{
     };
 
     const handleNext = ()=>{
-        setPage(page +1)
+        return setPage(page +1)
     }
 
     const handlePrev = () =>{
-        setPage(page -1)
+        return setPage(page -1)
     }
-
-    console.log(page)
 
     return(
         <ReservationFormContext.Provider value={{page, setPage, handleNext, handlePrev, data, setData, handleData}}>

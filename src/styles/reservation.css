@@ -1,20 +1,18 @@
 
 .res-img{
-    position: absolute;
-    right: 20px;
     height: 360px;
     width: 41%;
-    top: 240px;
-    border-radius: 30px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 55px;
 }
 
 .res-img1{
-    position: absolute;
-    right: 20px;
     height: 360px;
     width: 41%;
-    top: 240px;
-    border-radius: 30px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 55px;
 }
 
 .res-container1{
@@ -24,6 +22,11 @@
     margin-left: 20px;
     width: 50%;
     border-color: #495E57;
+}
+
+.res-inp-img-cont{
+    display: flex;
+    flex-direction: row;
 }
 
 label {
@@ -153,6 +156,20 @@ label {
     font-weight: 500;
 }
 
+.res-optional{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.res-mail{
+    color: #F4CE14;
+}
+
+.res-container3{
+    max-width: 90%;
+}
+
 @media (max-width: 1025px) and (min-width: 642px){
     .res-img, .res-img1{
         display: none;
@@ -174,6 +191,26 @@ label {
     }
     .res-sel-element{
         height: 42px;
+    }
+    .res-optional{
+        font-size: 14px;
+    }
+    .back-home-button{
+        margin-top: 35px;
+        width: 163px;
+        font-size: 17px;
+    }
+    .res-end-heading{
+        font-size: 43px;
+     }
+     .res-end-text{
+         font-size: 17px;
+     }
+     .res-haken{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 35px;
     }
 }
 
@@ -228,5 +265,26 @@ label {
         font-family: "Karla";
         margin-bottom: 50px;
         margin-right: 10px;
+    }
+    .res-optional{
+        font-size: 11px;
+    }
+    .back-home-button{
+        margin-top: 35px;
+        width: 116px;
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .res-end-heading{
+        font-size: 25px;
+     }
+     .res-end-text{
+         font-size: 13px;
+     }
+     .res-haken{
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        margin-top: 18px;
     }
 }

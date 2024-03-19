@@ -1,0 +1,15 @@
+.filler{
+    height: 100px;
+}
+
+@media (max-width:642px){
+    .filler{
+        height: 60px;
+    }
+}
+
+@media (min-width:642px) and (max-width: 1025px){
+    .filler{
+        height: 75px
+    }
+}

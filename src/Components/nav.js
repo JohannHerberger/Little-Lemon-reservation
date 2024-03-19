@@ -4,6 +4,7 @@ import hamburger from "../images/icons8-hamburger-50.png"
 import { Link } from "react-router-dom"
 
 export function Nav (){
+
     return(
         <nav className="navbar">
             <img className="logo-nav" src={logo} alt="logo"></img>

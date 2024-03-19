@@ -7,12 +7,14 @@ import { Routes, Route } from 'react-router-dom';
 import { Menu } from './Components/menu';
 import { About } from './Components/about';
 import { Contact } from './Components/contact';
+import { Filler } from './Components/Filler';
 
 
 function App() {
   return (
       <div className='App'>
         <Nav/>
+        <Filler />
         <Routes >
           <Route path="/" element={<Homepage />}/>
           <Route path="/about" element={<About />}/>
