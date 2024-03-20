@@ -88,21 +88,22 @@
     }
     .mobile{
         width: 55%;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         position: fixed;
         right: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 0px 5px 1px #aaaaaa;
     }
-    
+
     .mobile-navigation-elements{
         display: flex;
         flex-direction: column;
         align-items: start;
         font-weight: 900;
         list-style: none;
-        font-size: 23px;
+        font-size: 20px;
         margin-top: 100px;
         margin-bottom: 10%;
         height: 55%;
@@ -134,14 +135,15 @@
     }
     .mobile{
         width: 37%;
-        background-color: white;
+        background-color: rgb(254, 253, 253);
         position: fixed;
         right: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
+        box-shadow: 0 0px 15px 1px #aaaaaa;
     }
-    
+
     .mobile-navigation-elements{
         display: flex;
         flex-direction: column;
