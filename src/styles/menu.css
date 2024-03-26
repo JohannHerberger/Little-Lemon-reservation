@@ -1,0 +1,203 @@
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #495E57;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.menu-appetizers, .menu-main-dish, .menu-desserts{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 25px 45px;
+}
+
+.menu-appetizers{
+    margin-top: 30px;
+}
+
+.menu-beverages{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+.menu-headings, .menu-headings1{
+    color: #F4CE14;
+    font-family: "MArkazi Text";
+    font-size: 70px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-decoration: underline;
+}
+
+.menu-item{
+    border: solid;
+    background-color: #495E57;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 70px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: white;
+}
+
+.menu-item.on{
+    height: 150px;
+}
+
+.menu-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color: white;
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.menu-text{
+    display: none;
+}
+
+.menu-text.on{
+    font-size: 18px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    color: #F4CE14;
+    margin-top: 10px;
+    width: 55%;
+    font-family: "Karla";
+    justify-content: space-between;
+}
+
+.menu-line{
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+}
+
+.menu-item-container{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-icon{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.menu-price{
+    color: #EE9772;
+}
+
+
+@media (max-width: 1025px) and (min-width: 642px){
+    .menu-appetizers, .menu-main-dish, .menu-desserts, .menu-beverages{
+        padding: 15px 30px;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    .menu-container{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .menu-headings, .menu-headings1{
+        font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .menu-item{
+        margin-bottom: 0px;
+        margin-top: 5px;
+        height: 60px;
+        padding-top: 10px;
+    }
+    .menu-item.on{
+        height: 130px;
+    }
+    .menu-item-header{
+        font-size: 23px;
+    }
+    .menu-text.on{
+        width: 60%;
+        font-size: 16px;
+        margin-top: 7px;
+    }
+    .menu-line{
+        border: 1px solid white;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .menu-item-icon{
+        width: 35px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 642px){
+    .menu-appetizers, .menu-main-dish, .menu-desserts, .menu-beverages{
+        padding: 8px 17px;
+        padding-bottom: 15px;
+        margin-bottom: 50px;
+    }
+    .menu-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu-headings{
+        font-size: 40px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+    }
+    .menu-headings1{
+        font-size: 30px;
+    }
+    .menu-item{
+        margin-bottom: 0px;
+        margin-top: 5px;
+        height: 40px;
+        padding-top: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .menu-item.on{
+        height: 115px;
+    }
+    .menu-item-header{
+        font-size: 16px;
+    }
+    .menu-text.on{
+        width: 63%;
+        font-size: 11px;
+        margin-top: 3px;
+    }
+    .menu-line{
+        border: 1px solid white;
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .menu-item-icon{
+        width: 25px;
+        margin-left: 5px;
+    }
+}
+

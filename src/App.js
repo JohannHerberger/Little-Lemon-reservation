@@ -2,7 +2,7 @@ import './App.css';
 import { ReservationFormProvider } from './Context/ReservationFormContext';
 import { Nav } from './Components/nav';
 import { Footer } from './Components/footer';
-import { Homepage } from './Components/Homepage';
+import { Homepage } from './Components/Homepage/Homepage';
 import { Routes, Route } from 'react-router-dom';
 import { Menu } from './Components/menu';
 import { About } from './Components/about';
