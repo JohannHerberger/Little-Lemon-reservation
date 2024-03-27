@@ -17,7 +17,7 @@ export const ReservationFormProvider = ({children}) =>{
 
     const getd = localStorage.getItem("data")
 
-    const [data, setData] = useState( JSON.parse(getd)||dataStart);
+    const [data, setData] = useState(JSON.parse(getd)||dataStart);
 
     const handleData = (event) => {
         const { name, value } = event.target;

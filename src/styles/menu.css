@@ -15,6 +15,7 @@
     border-color: white;
     border-radius: 20px;
     padding: 25px 45px;
+    align-items: center;
 }
 
 .menu-appetizers{
@@ -29,6 +30,7 @@
     border-color: white;
     border-radius: 20px;
     padding: 20px 40px;
+    align-items: center;
 }
 
 .menu-headings, .menu-headings1{
@@ -43,19 +45,17 @@
 .menu-item{
     border: solid;
     background-color: #495E57;
+    width: 100%;
     margin-bottom: 5px;
     margin-top: 5px;
-    height: 70px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
     border-color: white;
-}
-
-.menu-item.on{
-    height: 150px;
+    height: auto;
 }
 
 .menu-item-header{
@@ -63,10 +63,10 @@
     align-items: center;
     justify-content: space-between;
     width:100%;
-    color: white;
+    color: #F4CE14;
     font-family: "Karla";
     font-weight: 700;
-    font-size: 26px;
+    font-size: 27px;
 }
 
 .menu-text{
@@ -78,9 +78,9 @@
     text-align: start;
     display: flex;
     flex-direction: column;
-    color: #F4CE14;
+    color: white;
     margin-top: 10px;
-    width: 55%;
+    width: 60%;
     font-family: "Karla";
     justify-content: space-between;
 }
@@ -120,19 +120,19 @@
         padding-left: 80px;
         padding-right: 80px;
     }
-    .menu-headings, .menu-headings1{
+    .menu-headings{
         font-size: 60px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .menu-headings1{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 55px;
     }
     .menu-item{
         margin-bottom: 0px;
-        margin-top: 5px;
-        height: 60px;
-        padding-top: 10px;
-    }
-    .menu-item.on{
-        height: 130px;
     }
     .menu-item-header{
         font-size: 23px;
@@ -165,8 +165,8 @@
     }
     .menu-headings{
         font-size: 40px;
-        margin-bottom: 5px;
-        margin-top: 8px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
     .menu-headings1{
         font-size: 30px;
@@ -174,13 +174,7 @@
     .menu-item{
         margin-bottom: 0px;
         margin-top: 5px;
-        height: 40px;
-        padding-top: 5px;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    .menu-item.on{
-        height: 115px;
+        padding: 8px 8px;
     }
     .menu-item-header{
         font-size: 16px;
