@@ -10,11 +10,8 @@
 .menu-appetizers, .menu-main-dish, .menu-desserts{
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
-    border: solid;
-    border-color: white;
-    border-radius: 20px;
-    padding: 25px 45px;
+    margin-bottom: 30px;
+    border-width: 2px;
     align-items: center;
 }
 
@@ -24,12 +21,10 @@
 
 .menu-beverages{
     display: flex;
+    border-width: 3px;
     flex-direction: column;
     margin-bottom: 100px;
-    border: solid;
-    border-color: white;
     border-radius: 20px;
-    padding: 20px 40px;
     align-items: center;
 }
 
@@ -39,12 +34,12 @@
     font-size: 70px;
     margin-bottom: 10px;
     margin-top: 0px;
-    text-decoration: underline;
 }
 
 .menu-item{
     border: solid;
-    background-color: #495E57;
+    background-color: white;
+    border-radius: 10px;
     width: 100%;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -63,7 +58,7 @@
     align-items: center;
     justify-content: space-between;
     width:100%;
-    color: #F4CE14;
+    color: #495E57;
     font-family: "Karla";
     font-weight: 700;
     font-size: 27px;
@@ -78,15 +73,16 @@
     text-align: start;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
     margin-top: 10px;
     width: 60%;
     font-family: "Karla";
     justify-content: space-between;
+    font-weight: 600;
 }
 
 .menu-line{
-    border: 1px solid white;
+    border: 1px solid black;
     width: 100%;
     margin-bottom: 10px;
 }
@@ -111,9 +107,10 @@
 
 
 @media (max-width: 1025px) and (min-width: 642px){
-    .menu-appetizers, .menu-main-dish, .menu-desserts, .menu-beverages{
-        padding: 15px 30px;
-        padding-bottom: 30px;
+    .menu-appetizers, .menu-main-dish, .menu-desserts{
+        margin-bottom: 25px;
+    }
+    .menu-beverages{
         margin-bottom: 50px;
     }
     .menu-container{
@@ -121,7 +118,7 @@
         padding-right: 80px;
     }
     .menu-headings{
-        font-size: 60px;
+        font-size: 65px;
         margin-bottom: 5px;
         margin-top: 5px;
     }
@@ -143,8 +140,6 @@
         margin-top: 7px;
     }
     .menu-line{
-        border: 1px solid white;
-        width: 100%;
         margin-bottom: 7px;
     }
     .menu-item-icon{
@@ -154,17 +149,15 @@
 }
 
 @media (max-width: 642px){
-    .menu-appetizers, .menu-main-dish, .menu-desserts, .menu-beverages{
-        padding: 8px 17px;
-        padding-bottom: 15px;
-        margin-bottom: 50px;
+    .menu-appetizers, .menu-main-dish, .menu-desserts{
+        margin-bottom: 20px;
     }
     .menu-container{
         padding-left: 15px;
         padding-right: 15px;
     }
     .menu-headings{
-        font-size: 40px;
+        font-size: 50px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
@@ -185,8 +178,6 @@
         margin-top: 3px;
     }
     .menu-line{
-        border: 1px solid white;
-        width: 100%;
         margin-bottom: 7px;
     }
     .menu-item-icon{

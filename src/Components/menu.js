@@ -1,6 +1,6 @@
 import "../styles/menu.css"
-import down from "../images/icons8-down-arrow-50.png"
-import up from "../images/icons8-arrow-up-50.png"
+import down from "../icons/down(1).png"
+import up from "../icons/upload.png"
 import { useState } from "react"
 import instagram from "../images/Instagram_Glyph_Gradient.png"
 

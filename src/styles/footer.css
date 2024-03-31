@@ -75,7 +75,7 @@
 @media (max-width: 642px){
     .footer-real{
         flex-direction: column;
-        height: 700px;
+        height: 600px;
         align-items: start;
     }
     .logo-footer{

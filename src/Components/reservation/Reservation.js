@@ -6,21 +6,13 @@ import "../../styles/reservation.css"
 
 export function Reservation (){
 
-    const { page, setPage, data, setData} = useResFormContext()
-
-    const handleSubmit = (e)=>{
-        e.preventDefault()
-        setPage(page +1)
-        localStorage.clear("data")
-        localStorage.clear("page")
-    }
+    const { page } = useResFormContext()
 
     const display = [<FirstPartReservation />, <SecondPartReservation />, <ThirdPartReservation />]
 
     return(
-
-        <form className="res-form" onSubmit={handleSubmit}>
+        <div className="res-form" >
             {display[page]}
-        </form>
+        </div>
     )
 }

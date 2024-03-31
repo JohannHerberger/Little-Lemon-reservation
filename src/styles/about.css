@@ -33,6 +33,7 @@
     font-family: "Karla";
     font-size: 20px;
     color: white;
+    font-weight: 600;
 }
 
 .about-head-img{
@@ -62,11 +63,30 @@
 .about-main-text{
     font-family: "Karla";
     font-size: 21px;
+    font-weight: 600;
+    color: #495E57;
 }
 
 .about-main-color{
     color: #495E57;
+    font-weight: 600;
+}
+
+.about-button{
+    background-color: #F4CE14;
+    border: none;
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 10px 80px;
+    border-radius: 20px;
     font-weight: 800;
+    font-family: "Karla";
+    margin-bottom: 30px;
+}
+
+.about-button:hover{
+    background-color: #d1b217;
+    cursor: pointer;
 }
 
 @media (max-width: 1025px) and (min-width: 642px){
@@ -97,6 +117,12 @@
     .about-main-text{
         font-size: 16px;
     }
+    .about-button{
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 10px 60px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 642px){
@@ -105,11 +131,11 @@
         margin-left: 5%;
     }
     .about-head-img{
-        width: 60%;
+        width: 55%;
         margin-left: 5px;
     }
     .about-heading{
-        font-size: 38px;
+        font-size: 43px;
         margin-bottom: 0px;
     }
     .about-sub-heading{
@@ -124,10 +150,16 @@
         padding: 10px 10px;
     }
     .about-main-img{
-        width: 60%;
+        width: 55%;
         height: 70%;
     }
     .about-main-text{
         font-size: 14px;
+    }
+    .about-button{
+        margin-top: 30px;
+        font-size: 17px;
+        padding: 10px 40px;
+        margin-bottom: 10px;
     }
 }

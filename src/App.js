@@ -6,7 +6,7 @@ import { Homepage } from './Components/Homepage/Homepage';
 import { Routes, Route } from 'react-router-dom';
 import { Menu } from './Components/menu';
 import { About } from './Components/about';
-import { Contact } from './Components/contact';
+import { Contact } from './Components/Contact/contact';
 import { Filler } from './Components/Filler';
 
 

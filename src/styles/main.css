@@ -32,7 +32,7 @@
 .main-cont-head > h5 {
     font-family: "Karla";
     font-weight: 700;
-    font-size: 19px;
+    font-size: 22px;
     margin: 0px;
 }
 
@@ -118,28 +118,29 @@
         padding: 15px 20px;
     }
     .main-heading{
-        font-size: 45px;
+        font-size: 50px;
+        margin-top: 0px;
         margin-right: 100px;
     }
     .main-head-container{
         width: 630px;
     }
     .dish-container, .dish-container1{
-        width: 190px;
+        width: 197px;
         height: 400px;
     }
     .dish-container1{
         margin: 0px;
     }
     .main-pic{
-        width: 190px;
+        width: 197px;
         height: 160px;
     }
     .main-cont-head{
         margin: 13px 13px;
     }
     .main-cont-head > h5{
-        font-size: 16px;
+        font-size: 19px;
     }
     .main-price{
         font-size: 15px;
@@ -151,7 +152,7 @@
     }
     .main-cont-button{
         font-size: 14px;
-        width: 150px;
+        width: 140px;
         margin-top: 26px;
         margin-left: 10px;
         padding: 8px 12px;
@@ -160,8 +161,8 @@
     }
     .main-cont-button1{
         font-size: 14px;
-        width: 150px;
-        margin-top: 10px;
+        width: 140px;
+        margin-top: 28px;
         margin-left: 10px;
         padding: 8px 12px;
         border-radius: 12px;
@@ -169,7 +170,7 @@
     }
     .main-cont-button2{
         font-size: 15px;
-        width: 150px;
+        width: 140px;
         margin-top: 43px;
         margin-left: 10px;
         padding: 8px 10px;
@@ -187,7 +188,7 @@
 @media (max-width: 642px){
     .main{
         margin-top: 10px;
-        height: 1300px;
+        height: 1600px;
         align-items: center;
     }
     .main-cont-container{
@@ -202,7 +203,8 @@
     }
     .main-heading{
         margin: 0px;
-        font-size: 30px;
+        margin-top: 5px;
+        font-size: 38px;
     }
     .main-button{
         font-size: 15px;
@@ -213,36 +215,36 @@
         margin-bottom: 30px;
         margin-left: 0px;
         margin-right: 0px;
-        width: 210px;
-        height: 350px;
+        width: 260px;
+        height: 450px;
     }
     .main-pic{
-        width: 210px;
+        width: 260px;
     }
     .main-cont-head{
-        margin: 10px 10px;
+        margin: 15px 15px;
     }
     .main-cont-head > h5{
-        font-size: 16px;
+        font-size: 22px;
     }
     .main-price{
-        font-size: 14px;
+        font-size: 18px;
     }
     .main-text{
-        font-size: 12px;
+        font-size: 16px;
         margin: 5px 10px;
     }
     .main-cont-button, .main-cont-button1, .main-cont-button2{
-        font-size: 14px;
+        font-size: 18px;
         padding: 10px 8px;
         width: 150px;
         margin-left: 10px;
     }
     .main-cont-button{
-        margin-top: 5px;
+        margin-top: 15px;
     }
     .main-cont-button2{
-        margin-top: 0px;
+        margin-top: 15px;
     }
     .delivery-icon{
         width: 15px;

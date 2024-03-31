@@ -6,21 +6,40 @@ import { useEffect } from "react";
 
 export function FirstPartReservation (){
 
-    const {data, handleData, handleNext,setData} = useResFormContext()
+    const {data, handleData, handleNext,setPage, page} = useResFormContext()
 
     useEffect(()=>{
         localStorage.setItem("data", JSON.stringify(data))
     },[data])
 
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+        setPage(page+1)
+    }
+
+    /*set date input min correct if time is over 17:00 */
+    const date = new Date();
+    const time = date.getHours();
+    const dateJson = new Date().toJSON().slice(0, 10)
+
+    function addDays(days) {
+        var result = new Date();
+        result.setDate(result.getDate() + days);
+        return result;
+    }
+
+    const date1Json = addDays(1).toJSON().slice(0,10)
+
+
     return (
-        <div style={{display:"flex",alignItems:"center",flexDirection:"column",justifyContent:"center",backgroundImage:`url(${restaurant})`, backgroundSize:"100%", height:"100%",backgroundPosition:"center"}}>
+        <form onSubmit={handleSubmit} className="res-background">
             <div className="res-container1">
                 <header className="res-header">
-                    <h2 className="res-heading">Reservation details</h2>
+                    <h2 className="res-heading">Details</h2>
                 </header>
-                <label htmlFor="res-date">Choose date</label>
-                <input className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
-                <label htmlFor="res-time">Choose time</label>
+                <label htmlFor="res-date">Choose date*</label>
+                <input min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
+                <label htmlFor="res-time">Choose time*</label>
                 <select className="res-sel-element" value={data.time} name="time" onChange={handleData} id="res-time ">
                     <option value="17:00">17:00</option>
                     <option value="18:00">18:00</option>
@@ -29,9 +48,9 @@ export function FirstPartReservation (){
                     <option value="21:00">21:00</option>
                     <option value="22:00">22:00</option>
                 </select>
-                <label htmlFor="guests">Amount of guests</label>
+                <label htmlFor="guests">Amount of guests*</label>
                 <input className="res-input-element" value={data.guests} onChange={handleData} name="guests" type="number" placeholder="1" min="1" max="10" id="guests" />
-                <label htmlFor="occasion">Occasion</label>
+                <label htmlFor="occasion">Occasion*</label>
                 <select className="res-sel-element" value={data.occasion} onChange={handleData} name="occasion" id="occasion">
                     <option value="no special occasion">no special occasion</option>
                     <option value="birthday">Birthday</option>
@@ -39,8 +58,8 @@ export function FirstPartReservation (){
                 </select>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
-                <button className="next-button" onClick={handleNext} type="button">continue</button>
+                <button className="next-button" type="submit">continue</button>
             </div>
-        </div>
+        </form>
     )
 }

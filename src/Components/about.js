@@ -1,8 +1,16 @@
 import "../styles/about.css"
 import chefs from "../images/Mario and Adrian A.jpg"
 import mario from "../images/restaurant chef B.jpg"
+import { useNavigate } from "react-router-dom"
 
 export function About (){
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        window.scrollTo(0,0)
+        navigate("/contact")
+    } ;
+
     return(
         <div className="about-container">
             <div className="about-header">
@@ -41,6 +49,11 @@ export function About (){
                 prepared dishes. At <span className="about-main-color">"Little Lemon"</span>, guests experience not just a meal, but a culinary journey through the 
                 sun-drenched coastal regions of the Mediterranean that will keep them coming back again and again.
                 </a>
+                <div style={{display:"flex", justifyContent:"center"}}>
+                    <button className="about-button" onClick={handleClick}>
+                        Contact us
+                    </button>
+                </div>
             </div>
         </div>
     )
