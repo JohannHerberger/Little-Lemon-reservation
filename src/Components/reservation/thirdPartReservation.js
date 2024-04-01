@@ -1,6 +1,6 @@
 import "../../styles/reservation.css"
 import { useResFormContext } from "../../hooks/useResFormContext"
-import  checkHaken  from "../../images/hook-7300191_640.png"
+import  checkHaken  from "../../icons/hook-7300191_640.png"
 import { useNavigate } from "react-router-dom";
 
 export function ThirdPartReservation (){

@@ -1,6 +1,5 @@
 import { useResFormContext } from "../../hooks/useResFormContext"
 import "../../styles/reservation.css"
-import restaurant from "../../images/shawnanggg-nmpW_WwwVSc-unsplash.jpg"
 import { useEffect } from "react"
 
 export function SecondPartReservation (){
@@ -10,6 +9,10 @@ export function SecondPartReservation (){
     useEffect(()=>{
         localStorage.setItem("data", JSON.stringify(data))
     },[data])
+
+    useEffect(()=>{
+        localStorage.setItem("page", JSON.stringify(page))
+    },[page])
 
     const handleSubmit = (e)=>{
         e.preventDefault()

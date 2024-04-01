@@ -1,5 +1,4 @@
 import { APIProvider,Map, AdvancedMarker, Pin, InfoWindow } from "@vis.gl/react-google-maps";
-import { useState} from "react";
 import "../../styles/contact.css"
 
 export default function GoogleMap () {

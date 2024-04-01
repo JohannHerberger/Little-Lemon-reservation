@@ -2,7 +2,7 @@ import "../../styles/main.css";
 import bruchetta from "../../images/Bildschirmfoto 2024-02-18 um 16.38.19.png"
 import dessert from "../../images/lemon dessert.jpg"
 import salad from "../../images/greekSalad.jpg"
-import menuCard from "../../images/Dish icon.svg"
+import menuCard from "../../icons/Dish icon.svg"
 import { useNavigate } from "react-router-dom";
 
 export function Main (){
@@ -65,7 +65,7 @@ export function Main (){
                     </a>
                     <button onClick={()=>(navigate("/menu"), window.scrollTo(0,0))} className="main-cont-button">
                         <a>View Menu</a>
-                        <img className="menu-icon" src={menuCard}/>
+                        <img className="menu-icon" src={menuCard} />
                     </button>
                 </div>
             </div>

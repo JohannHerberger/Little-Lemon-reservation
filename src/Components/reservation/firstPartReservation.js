@@ -1,6 +1,5 @@
 import { useResFormContext } from "../../hooks/useResFormContext";
 import "../../styles/reservation.css"
-import restaurant from "../../images/shawnanggg-nmpW_WwwVSc-unsplash.jpg"
 import { useEffect } from "react";
 
 
@@ -12,12 +11,16 @@ export function FirstPartReservation (){
         localStorage.setItem("data", JSON.stringify(data))
     },[data])
 
+    useEffect(()=>{
+        localStorage.setItem("page", JSON.stringify(page))
+    },[page])
+
     const handleSubmit = (e)=>{
         e.preventDefault()
         setPage(page+1)
     }
 
-    /*set date input min correct if time is over 17:00 */
+    /* functions to set date input min and max correct */
     const date = new Date();
     const time = date.getHours();
     const dateJson = new Date().toJSON().slice(0, 10)
@@ -29,6 +32,7 @@ export function FirstPartReservation (){
     }
 
     const date1Json = addDays(1).toJSON().slice(0,10)
+    const date30Json = addDays(30).toJSON().slice(0,10)
 
 
     return (
@@ -38,7 +42,7 @@ export function FirstPartReservation (){
                     <h2 className="res-heading">Details</h2>
                 </header>
                 <label htmlFor="res-date">Choose date*</label>
-                <input min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
+                <input max={date30Json} min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
                 <label htmlFor="res-time">Choose time*</label>
                 <select className="res-sel-element" value={data.time} name="time" onChange={handleData} id="res-time ">
                     <option value="17:00">17:00</option>

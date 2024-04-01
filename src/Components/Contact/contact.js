@@ -2,14 +2,13 @@ import "../../styles/contact.css"
 import email from "../../icons/email.png"
 import phone from "../../icons/anruf.png"
 import shop from "../../icons/elektronik-shop.png"
-import person from "../../icons/mann.png"
 import  GoogleMap  from "./Map"
 
 export function Contact (){
 
     return(
         <>
-            <div className="contact-container">
+            <main className="contact-container">
                 <div className="maps-container">
                     <GoogleMap />
                 </div>
@@ -27,7 +26,7 @@ export function Contact (){
                         Mo.-Sa. 17:00-22:00
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }

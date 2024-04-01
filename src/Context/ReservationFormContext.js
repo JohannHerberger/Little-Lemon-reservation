@@ -7,13 +7,13 @@ export const ReservationFormProvider = ({children}) =>{
 
     const getp = localStorage.getItem("page")
 
-    const [page, setPage] = useState(0)
+    const [page, setPage] = useState(JSON.parse(getp)||0)
 
     const dataStart = {date: "", time: "", occasion: "", guests: "", firstName: "", secondName: "", email: "", phoneNumber: ""}
 
     const getd = localStorage.getItem("data")
 
-    const [data, setData] = useState(dataStart);
+    const [data, setData] = useState(JSON.parse(getd)||dataStart);
 
     useEffect(()=>{
         console.log(page)
