@@ -4,11 +4,19 @@
     flex-direction: column;
     background-image: url("../images/restaurant.jpg");
     background-repeat:no-repeat;
-    height: 600px;
+    height: 700px;
     background-size: 100%;
     background-position: center;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.soc-med-container{
+    margin-top: 50px;
+}
+
+.contact-soc{
+    width: 40px;
 }
 
 .maps-container{
@@ -59,6 +67,9 @@
 @media (max-width: 1025px) and (min-width: 642px){
     .contact-container{
         background-size: 1000px;
+    }
+    .maps-container{
+        width: 85%;
     }
     .contact-info{
         padding: 10px 5px;

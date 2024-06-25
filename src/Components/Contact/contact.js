@@ -9,6 +9,11 @@ export function Contact (){
     return(
         <>
             <main className="contact-container">
+                <div className="soc-med-container">
+                    <i aria-label="link to Instagram"></i>
+                    <i aria-label="link to facebook"></i>
+                    <i aria-label="link to X"></i>
+                </div>
                 <div className="maps-container">
                     <GoogleMap />
                 </div>

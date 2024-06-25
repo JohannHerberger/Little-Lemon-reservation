@@ -19,27 +19,27 @@ export function Footer (){
                                 Navigation
                             </li>
                             <li>
-                                <Link onClick={() => handleClick()} to="/" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" onClick={() => handleClick()} to="/" style={{color:"black", textDecoration:"none"}}>
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={() => handleClick()} to="/about" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" onClick={() => handleClick()} to="/about" style={{color:"black", textDecoration:"none"}}>
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={() => handleClick()} to="/menu" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" onClick={() => handleClick()} to="/menu" style={{color:"black", textDecoration:"none"}}>
                                     Menu
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={() => handleClick()} to="/reservation" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" onClick={() => handleClick()} to="/reservation" style={{color:"black", textDecoration:"none"}}>
                                     Reservation
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={() => handleClick()} to="/contact" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" onClick={() => handleClick()} to="/contact" style={{color:"black", textDecoration:"none"}}>
                                     Contact
                                 </Link>
                             </li>
@@ -67,13 +67,13 @@ export function Footer (){
                                 Social Media links
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/?locale=de_DE" style={{color:"black", textDecoration:"none"}}>Facebook</a>
+                                <a className="footer-hover" href="https://www.facebook.com/?locale=de_DE" style={{color:"black", textDecoration:"none"}}>Facebook</a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" style={{color:"black", textDecoration:"none"}}>Instagram</a>
+                                <a className="footer-hover" href="https://www.instagram.com/" style={{color:"black", textDecoration:"none"}}>Instagram</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/?lang=de" style={{color:"black", textDecoration:"none"}}>Twitter</a>
+                                <a className="footer-hover" href="https://twitter.com/?lang=de" style={{color:"black", textDecoration:"none"}}>Twitter</a>
                             </li>
                         </ul>
                     </div>

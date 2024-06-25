@@ -45,7 +45,6 @@
 /* responisve nav nav*/
 
 .mobile-active{
-    top: -100%;
     background-color: #F4CE14;
     z-index: 5;
     display: flex;

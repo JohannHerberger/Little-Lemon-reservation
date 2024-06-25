@@ -39,7 +39,7 @@ export function Menu (){
                 <header>
                     <h1 className="menu-headings">Appetizers</h1>
                 </header>
-                <button onClick={()=>setApt1(!apt1)} className={apt1 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setApt1(!apt1)} className={apt1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Vitello Tornato
                         <div className="menu-item-container">
@@ -52,7 +52,7 @@ export function Menu (){
                         Tender, thinly sliced ​​slices of cooked veal are artfully arranged on a plate and coated in a rich tuna sauce.
                     </div>
                 </button>
-                <button onClick={()=>setApt2(!apt2)} className={apt2 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setApt2(!apt2)} className={apt2 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Gazpacho
                         <div className="menu-item-container">
@@ -66,7 +66,7 @@ export function Menu (){
                         refined with olive oil, vinegar and spices.
                     </div>
                 </button>
-                <button onClick={()=>setApt3(!apt3)} className={apt3 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setApt3(!apt3)} className={apt3 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Grilled shrimp skewers
                         <div className="menu-item-container">
@@ -80,7 +80,7 @@ export function Menu (){
                         fresh lemon juice, olive oil and Mediterranean herbs
                     </div>
                 </button>
-                <button onClick={()=>setApt4(!apt4)} className={apt4 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setApt4(!apt4)} className={apt4 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Calamari alla Griglia
                         <div className="menu-item-container">
@@ -94,7 +94,7 @@ export function Menu (){
                         then grilled for a delicious smoky touch. Served with a side of spicy aioli dip for an added kick.
                     </div>
                 </button>
-                <button onClick={()=>setApt5(!apt5)} className={apt5 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setApt5(!apt5)} className={apt5 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Hummus plate
                         <div className="menu-item-container">
@@ -114,7 +114,7 @@ export function Menu (){
                 <header>
                     <h1 className="menu-headings">Main dish</h1>
                 </header>
-                <button onClick={()=>setMain1(!main1)} className={main1 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain1(!main1)} className={main1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Grilled sea bream
                         <div className="menu-item-container">
@@ -128,7 +128,7 @@ export function Menu (){
                         Served with a Mediterranean vegetable ragout made from zucchini, peppers, tomatoes and olives.
                     </div>
                 </button>
-                <button onClick={()=>setMain2(!main2)} className={main2 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain2(!main2)} className={main2 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Lamb chops 
                         <div className="menu-item-container">
@@ -142,7 +142,7 @@ export function Menu (){
                         crispy rosemary potatoes and a refreshing cucumber salad.
                     </div>
                 </button>
-                <button onClick={()=>setMain3(!main3)} className={main3 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain3(!main3)} className={main3 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Pasta Puttanesca
                         <div className="menu-item-container">
@@ -156,7 +156,7 @@ export function Menu (){
                         A simple but flavorful dish that perfectly captures the flavors of the Mediterranean.
                     </div>
                 </button>
-                <button onClick={()=>setMain4(!main4)} className={main4 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain4(!main4)} className={main4 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Paella seafood
                         <div className="menu-item-container">
@@ -170,7 +170,7 @@ export function Menu (){
                         and a variety of Mediterranean spices. A real highlight of Spanish cuisine.
                     </div>
                 </button>
-                <button onClick={()=>setMain5(!main5)} className={main5 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain5(!main5)} className={main5 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Greek gyros
                         <div className="menu-item-container">
@@ -184,7 +184,7 @@ export function Menu (){
                         onions and parsley in warm pita bread.
                     </div>
                 </button>
-                <button onClick={()=>setMain6(!main6)} className={main6 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain6(!main6)} className={main6 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Chicken Saltimbocca
                         <div className="menu-item-container">
@@ -198,7 +198,7 @@ export function Menu (){
                         braised in a white wine sauce and served with creamy Parmesan risotto.
                     </div>
                 </button>
-                <button onClick={()=>setMain7(!main7)} className={main7 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain7(!main7)} className={main7 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Ratatouille polenta
                         <div className="menu-item-container">
@@ -212,7 +212,7 @@ export function Menu (){
                         peppers and tomatoes, served with creamy polenta and a drizzle of olive oil.
                     </div>
                 </button>
-                <button onClick={()=>setMain8(!main8)} className={main8 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain8(!main8)} className={main8 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Moussaka
                         <div className="menu-item-container">
@@ -226,7 +226,7 @@ export function Menu (){
                         all baked together until golden brown and delicious.
                     </div>
                 </button>
-                <button onClick={()=>setMain9(!main9)} className={main9 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setMain9(!main9)} className={main9 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Stuffed eggplants
                         <div className="menu-item-container">
@@ -245,7 +245,7 @@ export function Menu (){
                 <header>
                     <h1 className="menu-headings">Desserts</h1>
                 </header>
-                <button onClick={()=>setDessert1(!dessert1)} className={dessert1 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setDessert1(!dessert1)} className={dessert1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Tiramisu
                         <div className="menu-item-container">
@@ -259,7 +259,7 @@ export function Menu (){
                         in coffee and amaretto and a generous sprinkling of cocoa powder.
                     </div>
                 </button>
-                <button onClick={()=>setDessert2(!dessert2)} className={dessert2 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setDessert2(!dessert2)} className={dessert2 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Cannoli
                         <div className="menu-item-container">
@@ -273,7 +273,7 @@ export function Menu (){
                         Every bite is a match made in heaven between creamy cheese and crunchy dough.
                     </div>
                 </button>
-                <button onClick={()=>setDessert3(!dessert3)} className={dessert3 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setDessert3(!dessert3)} className={dessert3 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Granita
                         <div className="menu-item-container">
@@ -287,7 +287,7 @@ export function Menu (){
                         served with a slice of lemon or mint leaves.
                     </div>
                 </button>
-                <button onClick={()=>setDessert4(!dessert4)} className={dessert4 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setDessert4(!dessert4)} className={dessert4 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Panna Cotta
                         <div className="menu-item-container">
@@ -301,7 +301,7 @@ export function Menu (){
                         An elegant and delicate dessert that strikes the perfect balance between sweet and sour.
                     </div>
                 </button>
-                <button onClick={()=>setDessert5(!dessert5)} className={dessert5 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setDessert5(!dessert5)} className={dessert5 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Baklava
                         <div className="menu-item-container">
@@ -320,7 +320,7 @@ export function Menu (){
                 <header>
                     <h1 className="menu-headings1">Homemade lemonades</h1>
                 </header>
-                <button onClick={()=>setBev1(!bev1)} className={bev1 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setBev1(!bev1)} className={bev1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Blueberry-lavender
                         <div className="menu-item-container">
@@ -334,7 +334,7 @@ export function Menu (){
                         garnish of fresh blueberries and a sprig of lavender.
                     </div>
                 </button>
-                <button onClick={()=>setBev2(!bev2)} className={bev2 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setBev2(!bev2)} className={bev2 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Lime-mint
                         <div className="menu-item-container">
@@ -349,7 +349,7 @@ export function Menu (){
                         flavors with a refreshing mint kick.
                     </div>
                 </button>
-                <button onClick={()=>setBev3(!bev3)} className={bev3 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setBev3(!bev3)} className={bev3 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Rhubarb-oranges
                         <div className="menu-item-container">
@@ -363,7 +363,7 @@ export function Menu (){
                         then sweetened with a touch of honey. Served over ice with a garnish of orange slices and rhubarb pieces.
                     </div>
                 </button>
-                <button onClick={()=>setBev4(!bev4)} className={bev4 ? "menu-item on": "menu-item"}>
+                <button aria-label="menu-dish-information" onClick={()=>setBev4(!bev4)} className={bev4 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Pomegranate-rosemary
                         <div className="menu-item-container">
