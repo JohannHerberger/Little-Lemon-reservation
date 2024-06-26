@@ -3,10 +3,8 @@ import bruchetta from "../../images/Bildschirmfoto 2024-02-18 um 16.38.19.png"
 import dessert from "../../images/lemon dessert.jpg"
 import salad from "../../images/greekSalad.jpg"
 import menuCard from "../../icons/Dish icon.svg"
-import { useNavigate } from "react-router-dom";
 
 export function Main (){
-    const navigate = useNavigate();
 
     return(
         <main className="main">
@@ -28,7 +26,7 @@ export function Main (){
                         crunchy garlic and rosmary
                         croutons.
                     </a>
-                    <button onClick={()=> (navigate("/menu"),window.scrollTo(0,0))} className="main-cont-button1">
+                    <button className="main-cont-button1">
                         <a className="delivery-text">View Menu</a>
                         <img className="menu-icon" src={menuCard}/>
                     </button>
@@ -45,7 +43,7 @@ export function Main (){
                         seasoned with salt and olive
                         oil.
                     </a>
-                    <button onClick={()=> (navigate("/menu"), window.scrollTo(0,0))} className="main-cont-button2">
+                    <button className="main-cont-button2">
                         <a className="delivery-text">View Menu</a>
                         <img className="menu-icon" src={menuCard}/>
                     </button>
@@ -63,7 +61,7 @@ export function Main (){
                         sourced and is as authentic 
                         as can be imagined.
                     </a>
-                    <button onClick={()=>(navigate("/menu"), window.scrollTo(0,0))} className="main-cont-button">
+                    <button className="main-cont-button">
                         <a>View Menu</a>
                         <img className="menu-icon" src={menuCard} />
                     </button>

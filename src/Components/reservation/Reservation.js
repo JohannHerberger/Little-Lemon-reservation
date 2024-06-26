@@ -11,7 +11,7 @@ export function Reservation (){
     const display = [<FirstPartReservation />, <SecondPartReservation />, <ThirdPartReservation />]
 
     return(
-        <div className="res-form" >
+        <div id="/reservation" className="res-form" >
             {display[page]}
         </div>
     )

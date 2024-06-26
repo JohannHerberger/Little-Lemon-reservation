@@ -1,11 +1,8 @@
 import "../styles/footer.css";
 import logo from "../images/logo2.png"
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export function Footer (){
-    const handleClick = ()=>{
-        window.scrollTo(0,0)
-    };
 
     return(
         <footer className="footer">
@@ -19,27 +16,27 @@ export function Footer (){
                                 Navigation
                             </li>
                             <li>
-                                <Link className="footer-hover" onClick={() => handleClick()} to="/" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" to="/" style={{color:"black", textDecoration:"none"}}>
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link className="footer-hover" onClick={() => handleClick()} to="/about" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" to="/about" style={{color:"black", textDecoration:"none"}}>
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link className="footer-hover" onClick={() => handleClick()} to="/menu" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" to="/menu" style={{color:"black", textDecoration:"none"}}>
                                     Menu
                                 </Link>
                             </li>
                             <li>
-                                <Link className="footer-hover" onClick={() => handleClick()} to="/reservation" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" to="/reservation" style={{color:"black", textDecoration:"none"}}>
                                     Reservation
                                 </Link>
                             </li>
                             <li>
-                                <Link className="footer-hover" onClick={() => handleClick()} to="/contact" style={{color:"black", textDecoration:"none"}}>
+                                <Link className="footer-hover" to="/contact" style={{color:"black", textDecoration:"none"}}>
                                     Contact
                                 </Link>
                             </li>

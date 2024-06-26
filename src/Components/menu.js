@@ -34,7 +34,7 @@ export function Menu (){
 
 
     return(
-        <div className="menu-container">
+        <div id="/menu" className="menu-container">
             <div className="menu-appetizers">
                 <header>
                     <h1 className="menu-headings">Appetizers</h1>

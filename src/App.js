@@ -3,7 +3,6 @@ import { ReservationFormProvider } from './Context/ReservationFormContext';
 import { Nav } from './Components/nav';
 import { Footer } from './Components/footer';
 import { Homepage } from './Components/Homepage/Homepage';
-import { Routes, Route } from 'react-router-dom';
 import { Menu } from './Components/menu';
 import { About } from './Components/about';
 import { Contact } from './Components/Contact/contact';
@@ -15,13 +14,11 @@ function App() {
       <div className='App'>
         <Nav/>
         <Filler />
-        <Routes >
-          <Route path="/" element={<Homepage />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/menu"element={<Menu />}/>
-          <Route path="/reservation" element={<ReservationFormProvider />}/>
-          <Route path="/contact" element={<Contact />}/>
-        </Routes>
+        <Homepage />
+        <About />
+        <Menu />
+        <ReservationFormProvider />
+        <Contact />
         <Footer />
       </div>
   );

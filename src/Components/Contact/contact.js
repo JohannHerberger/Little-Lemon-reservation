@@ -8,7 +8,7 @@ export function Contact (){
 
     return(
         <>
-            <main className="contact-container">
+            <main id="/contact" className="contact-container">
                 <div className="soc-med-container">
                     <i aria-label="link to Instagram"></i>
                     <i aria-label="link to facebook"></i>

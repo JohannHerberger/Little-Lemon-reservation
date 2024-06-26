@@ -1,12 +1,9 @@
 import "../../styles/reservation.css"
 import { useResFormContext } from "../../hooks/useResFormContext"
 import  checkHaken  from "../../icons/hook-7300191_640.png"
-import { useNavigate } from "react-router-dom";
 
 export function ThirdPartReservation (){
     const { data } = useResFormContext();
-
-    const navigate = useNavigate()
 
     return (
         <div className="res-container2">
@@ -19,7 +16,7 @@ export function ThirdPartReservation (){
                 </div>
                 <a className="res-end-text">You will shortly receive a confirmation email to <a className="res-mail">{data.email}</a> containing all the details of your reservation.</a>
             </div>
-            <button onClick={()=> navigate("/")} className="back-home-button">Back to Home</button>
+            <button className="back-home-button">Back to Home</button>
         </div>
     )
 }

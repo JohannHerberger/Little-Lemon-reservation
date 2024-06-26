@@ -1,19 +1,12 @@
 import "../styles/nav.css"
 import logo from "../images/Logo.svg"
 import hamburger from "../icons/icons8-hamburger-50.png"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-scroll"
 import { useState } from "react"
 import cross from "../icons/close.png"
 
 export function Nav (){
   const [mobileNav, setMobileNav] = useState(false)
-
-  function MobileNav(){
-    return (
-        window.scrollTo(0,0),
-        setMobileNav(false)
-    )
-  }
 
     return(
         <nav>
@@ -24,19 +17,19 @@ export function Nav (){
                 </button>
                 <ul className="navigation-elements">
                     <li>
-                        <NavLink onClick={()=>window.scrollTo(0,0)} to="/" className="nav-link">Home</NavLink>
+                        <Link to="/" className="nav-link">Home</Link>
                     </li>
                     <li>
-                        <NavLink onClick={()=>window.scrollTo(0,0)} to="/about" className="nav-link">About</NavLink>
+                        <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li>
-                        <NavLink onClick={()=>window.scrollTo(0,0)} to="/menu" className="nav-link">Menu</NavLink>
+                        <Link to="/menu" className="nav-link">Menu</Link>
                     </li>
                     <li>
-                        <NavLink onClick={()=>window.scrollTo(0,0)}to="/reservation" className="nav-link">Reservation</NavLink>
+                        <Link to="/reservation" className="nav-link">Reservation</Link>
                     </li>
                     <li>
-                        <NavLink onClick={()=>window.scrollTo(0,0)} to="/contact" className="nav-link">Contact</NavLink>
+                        <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </div>
@@ -47,19 +40,19 @@ export function Nav (){
                 <img className={mobileNav ? "logo-nav-mobile": "mobilePassiv"} src={logo} />
                 <ul className="mobile-navigation-elements">
                     <li>
-                        <NavLink onClick={() => MobileNav()} to="/" className="nav-link">Home</NavLink>
+                        <Link onClick={() => setMobileNav(true)} to="/" className="nav-link">Home</Link>
                     </li>
                     <li>
-                        <NavLink onClick={() => MobileNav()} to="/about" className="nav-link">About</NavLink>
+                        <Link onClick={() => setMobileNav(true)}  to="/about" className="nav-link">About</Link>
                     </li>
                     <li>
-                        <NavLink onClick={() => MobileNav()} to="/menu" className="nav-link">Menu</NavLink>
+                        <Link onClick={() => setMobileNav(true)}  to="/menu" className="nav-link">Menu</Link>
                     </li>
                     <li>
-                        <NavLink onClick={() => MobileNav()} to="/reservation" className="nav-link">Reservation</NavLink>
+                        <Link onClick={() => setMobileNav(true)}  to="/reservation" className="nav-link">Reservation</Link>
                     </li>
                     <li>
-                        <NavLink onClick={() => MobileNav()} to="/contact" className="nav-link">Contact</NavLink>
+                        <Link onClick={() => setMobileNav(true)}  to="/contact" className="nav-link">Contact</Link>
                     </li>
                 </ul>
             </div>
