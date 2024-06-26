@@ -35,10 +35,10 @@ export function Menu (){
 
     return(
         <div id="/menu" className="menu-container">
+            <h1 className="menu-h1">Our Menu</h1>
+            <h2 className="menu-h2">Balanced and tasty</h2>
             <div className="menu-appetizers">
-                <header>
-                    <h1 className="menu-headings">Appetizers</h1>
-                </header>
+                <h1 className="menu-headings">Appetizers</h1>
                 <button aria-label="menu-dish-information" onClick={()=>setApt1(!apt1)} className={apt1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Vitello Tornato
@@ -111,9 +111,7 @@ export function Menu (){
                 </button>
             </div>
             <div className="menu-main-dish">
-                <header>
-                    <h1 className="menu-headings">Main dish</h1>
-                </header>
+                <h1 className="menu-headings">Main dish</h1>
                 <button aria-label="menu-dish-information" onClick={()=>setMain1(!main1)} className={main1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Grilled sea bream
@@ -242,9 +240,7 @@ export function Menu (){
                 </button>
             </div>
             <div className="menu-desserts">
-                <header>
-                    <h1 className="menu-headings">Desserts</h1>
-                </header>
+                <h1 className="menu-headings">Desserts</h1>
                 <button aria-label="menu-dish-information" onClick={()=>setDessert1(!dessert1)} className={dessert1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Tiramisu
@@ -317,9 +313,7 @@ export function Menu (){
                 </button>
             </div>
             <div className="menu-beverages">
-                <header>
-                    <h1 className="menu-headings1">Homemade lemonades</h1>
-                </header>
+                <h1 className="menu-headings1">Homemade lemonades</h1>
                 <button aria-label="menu-dish-information" onClick={()=>setBev1(!bev1)} className={bev1 ? "menu-item on": "menu-item"}>
                     <div className="menu-item-header">
                         Blueberry-lavender
