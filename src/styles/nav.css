@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     background-color: white;
+    justify-content: space-between;
     position: fixed;
-    width: 100%;
+    padding: 0% 16%;
+    width: 68%;
     z-index: 5;
 }
 
@@ -17,13 +18,14 @@
     font-family: "Karla";
     list-style: none;
     display: flex;
-    margin-left: 30px;
+    padding: 0px;
     font-weight: 900;
     font-size: 17px;
+    margin: 0px;
 }
 
 .nav-link{
-    margin-right: 40px;
+    margin-left: 35px;
     color: black;
     text-decoration: none;
     transition: 0.2s ease-in-out;
@@ -42,7 +44,7 @@
     border-radius: 5px;
 }
 
-/* responisve nav nav*/
+/* responisve nav*/
 
 .mobile-active{
     background-color: #F4CE14;
@@ -63,18 +65,12 @@
 }
 
 .toggle-button1{
-    position: absolute;
-    right: 50px;
-    top: 18px;
     display: none;
     background-color: white;
     border: none;
 }
 
 .toggle-button{
-    position: absolute;
-    right: 50px;
-    top: 18px;
     display: none;
     background-color: white;
     border: none;
@@ -93,6 +89,8 @@
     }
     .navbar{
         height: 80px;
+        width: 76%;
+        padding: 0% 12%;
     }
 
 
@@ -121,16 +119,16 @@
         justify-content: space-between;
     }
     .logo-nav-mobile{
-        width: 230px;
+        width: 200px;
         position: absolute;
-        top: 10px;
-        left: 20px;
+        margin-top: 13px;
+        left: 12%;
     }
     .close{
-        margin-top: 5px;
         width: 40px;
         position: absolute;
-        right: -7px;
+        right: 12%;
+        margin-top: 25px;
     }
 }
 
@@ -146,14 +144,14 @@
 @media (max-width:642px){
     .logo-nav{
         width: 150px;
-        margin-left: 20px;
     }
     .hamburger{
         width: 40px;
     }
     .navbar{
         height: 60px;
-        justify-content: start;
+        width: 90%;
+        padding: 0% 5%;
     }
     .navigation-elements{
         display: none;
@@ -162,8 +160,6 @@
         margin-top: 5px;
         width: 30px;
     }
-
-
     .mobile-active{
         transition: 0.5s;
         top: 0%;
@@ -176,8 +172,6 @@
 
     .toggle-button1{
         display: flex;
-        right: 30px;
-        top: 10px;
     }
     .mobile-navigation-elements{
         display: flex;
@@ -193,15 +187,15 @@
         justify-content: space-between;
     }
     .close{
-        margin-top: 5px;
         width: 30px;
         position: absolute;
-        right: -7px;
+        right: 5%;
+        margin-top: 15px;
     }
     .logo-nav-mobile{
         width: 150px;
         position: absolute;
-        left: 20px;
+        left: 5%;
         top:10px;
     }
 }
