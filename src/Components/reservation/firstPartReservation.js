@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export function FirstPartReservation (){
 
-    const {data, handleData, handleNext,setPage, page} = useResFormContext()
+    const {data, handleData, setPage, page} = useResFormContext()
 
     useEffect(()=>{
         localStorage.setItem("data", JSON.stringify(data))
@@ -15,10 +15,6 @@ export function FirstPartReservation (){
         localStorage.setItem("page", JSON.stringify(page))
     },[page])
 
-    const handleSubmit = (e)=>{
-        e.preventDefault()
-        setPage(page+1)
-    }
 
     /* functions to set date input min and max correct */
     const date = new Date();
@@ -36,10 +32,10 @@ export function FirstPartReservation (){
 
 
     return (
-        <form onSubmit={handleSubmit} className="res-background">
+        <div className={page ? "" : "off"}>
             <div className="res-container">
                 <label htmlFor="res-date">Choose date*</label>
-                <input max={date30Json} min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
+                <input max={date30Json} min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" defaultValue={dateJson}/>
                 <label htmlFor="res-time">Choose time*</label>
                 <select className="res-sel-element" value={data.time} name="time" onChange={handleData} id="res-time ">
                     <option value="17:00">17:00</option>
@@ -59,8 +55,8 @@ export function FirstPartReservation (){
                 </select>
             </div>
             <div style={{display:"flex", justifyContent:"center"}}>
-                <button className="next-button" type="submit">continue</button>
+                <button className="next-button" onClick={()=> setPage(false)}>continue</button>
             </div>
-        </form>
+        </div>
     )
 }

@@ -103,69 +103,8 @@ input, select{
     opacity: 70%;
 }
 
-.back-home-button{
-    margin-top: 40px;
-    width: 183px;
-    display: flex;
-    border-radius: 15px;
-    font-size: 20px;
-    font-family: "Karla";
-    font-weight: 700;
-    padding: 10px 25px;
-    border: none;
-    background-color: #F4CE14;
-    margin-bottom: 50px;
-}
-
-.back-home-button:hover{
-    cursor: pointer;
-    opacity: 70%;
-}
-
-/* reservation end*/
-
-.res-container2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: solid;
-    border-color: #495E57;
-    border-width: 20px;
-    height: 500px;
-}
-
-.res-container3{
-    width: 80%;
-}
-
-.res-end-heading{
-   font-size: 55px;
-   margin-bottom: 10px;
-   font-family: "Markazi Text";
-}
-
-.res-end-text{
-    font-size: 20px;
-    font-family: "Karla";
-    font-weight: 500;
-}
-
-.res-optional{
-    margin-left: 10px;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.res-mail{
-    color: #F4CE14;
-}
-
-.res-haken{
-    width: 60px;
-    height: 60px;
-    margin-left: 10px;
-    margin-top: 30px;
+.off{
+    display: none;
 }
 
 @media (max-width: 1025px) and (min-width: 642px){
@@ -202,36 +141,15 @@ input, select{
     .res-sel-element{
         height: 42px;
     }
-    .back-home-button{
-        margin-top: 35px;
-        width: 163px;
-        font-size: 17px;
-    }
     .next-button1{
+        margin-top: 30px;
         padding: 10px 60px;
+        font-size: 23px;
     }
-
-
-    .res-container3{    
-        width: 85%;
-    }
-    .res-container2{
-        border-width: 15px;
-    }
-    .res-optional{
-        font-size: 14px;
-    }
-    .res-end-heading{
-        font-size: 43px;
-     }
-     .res-end-text{
-         font-size: 18px;
-     }
-     .res-haken{
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-        margin-top: 20px;
+    .next-button{
+        margin-top: 30px;
+        font-size: 23px;
+        padding: 10px 70px;
     }
 }
 
@@ -286,34 +204,5 @@ input, select{
         font-size: 18px;
         padding: 10px 30px;
         border-radius: 15px;
-    }
-    .back-home-button{
-        margin-top: 35px;
-        width: 116px;
-        font-size: 13px;
-        padding: 5px 15px;
-    }
-
-
-    .res-container2{
-        border-width: 10px;
-    }
-    .res-container3{    
-        width: 95%;
-    }
-    .res-optional{
-        font-size: 11px;
-    }
-    .res-end-heading{
-        font-size: 32px;
-     }
-     .res-end-text{
-         font-size: 13px;
-     }
-     .res-haken{
-        width: 35px;
-        height: 35px;
-        margin-left: 10px;
-        margin-top: 18px;
     }
 }
