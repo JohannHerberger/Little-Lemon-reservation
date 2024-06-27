@@ -23,10 +23,7 @@ export function SecondPartReservation (){
 
     return(
         <form onSubmit={handleSubmit} className="res-background">
-            <div className="res-container1">
-                <header className="res-header">
-                    <h2 className="res-heading">About you</h2>
-                </header>
+            <div className="res-container">
                 <label htmlFor="firstName">First name*</label>
                 <input placeholder="f.e.: Max" required className="res-input-element" value={data.firstName} onChange={handleData} type="text" id="firstName" name="firstName" />
                 <label htmlFor="secondName">Second name*</label>

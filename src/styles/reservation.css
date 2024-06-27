@@ -1,11 +1,15 @@
-.res-container1{
-    margin-top: 50px;
+.res-form{
+    margin: 6% 16%;
+}
+
+.res-container{
+    margin-top: 30px;
     display: flex;
     background-color: #495E57;
     border-radius: 15px;
     flex-direction: column;
-    width: 50%;
-    padding: 20px 30px;
+    width: 94%;
+    padding: 3%;
 }
 
 .res-background{
@@ -13,27 +17,26 @@
     align-items: center;
     flex-direction: column;
     justify-content:center;
-    background-image: url("../images/shawnanggg-nmpW_WwwVSc-unsplash.jpg") ;
-    background-size:100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-/* heading*/
-
-.res-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-}
+/* Res Header */
 
 .res-heading{
-    color: #F4CE14;
+    padding: 0px;
     margin: 0px;
+    margin-bottom: 3px;
+    font-size: 75px;
+    color: #F4CE14;
     font-family: "Markazi Text";
-    font-size: 70px;
+    line-height: 30px;
+}
+
+.res-sub-heading{
+    padding: 0px;
+    margin: 0px;
+    font-size: 45px;
+    font-family: "Markazi Text";
+    color: #495E57;
 }
 
 /* input elements*/
@@ -42,6 +45,15 @@ label {
     font-weight: 700;
     font-size: 25px;
     color: white;
+}
+
+input, select{
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 10px;
+    font-family: "Karla";
 }
 
 .res-input-element{
@@ -157,8 +169,11 @@ label {
 }
 
 @media (max-width: 1025px) and (min-width: 642px){
-    .res-container1{
-        width: 60%;
+    .res-form{
+        margin: 6% 12%;
+    }
+    .res-container{
+        margin-top: 15px;
     }
     .res-background{
         background-size: 1000px;
@@ -166,10 +181,15 @@ label {
 
 
     .res-heading{
-        font-size: 55px;
+        font-size: 65px;
+    }
+    .res-sub-heading{
+        font-size: 30px;
     }
 
-
+    input, select{
+        font-size: 16px;
+    }
     label{
         font-size: 20px;
     }
@@ -216,10 +236,12 @@ label {
 }
 
 @media (max-width: 642px){
-    .res-container1{
-        margin-top: 20px;
-        width: 60%;
-        padding: 10px 20px;
+    .res-form{
+        margin: 5% 5%;
+    }
+    .res-container{
+        margin-top: 10px;
+        padding: 15px 20px;
     }
     .res-background{
         background-size: 1000px;
@@ -228,12 +250,17 @@ label {
 
 
     .res-heading{
-        font-size: 40px;
+        font-size: 55px;
+    }
+    .res-sub-heading{
+        font-size: 25px;
     }
 
-
-    label{
+    input, select{
         font-size: 14px;
+    }
+    label{
+        font-size: 18px;
     }
     .res-date-element{
         height: 35px;

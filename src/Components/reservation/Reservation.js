@@ -12,6 +12,8 @@ export function Reservation (){
 
     return(
         <div id="/reservation" className="res-form" >
+            <h1 className="res-heading">Reservation</h1>
+            <h2 className="res-sub-heading">Reserve a table</h2>
             {display[page]}
         </div>
     )

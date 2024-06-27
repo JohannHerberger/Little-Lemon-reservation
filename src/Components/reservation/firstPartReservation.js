@@ -37,10 +37,7 @@ export function FirstPartReservation (){
 
     return (
         <form onSubmit={handleSubmit} className="res-background">
-            <div className="res-container1">
-                <header className="res-header">
-                    <h2 className="res-heading">Details</h2>
-                </header>
+            <div className="res-container">
                 <label htmlFor="res-date">Choose date*</label>
                 <input max={date30Json} min={time > 17 ? date1Json: dateJson} required className="res-date-element" onChange={handleData} name="date" value={data.date} type="date" id="res-date" />
                 <label htmlFor="res-time">Choose time*</label>

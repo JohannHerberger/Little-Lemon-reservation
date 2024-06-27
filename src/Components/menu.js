@@ -1,10 +1,12 @@
 import "../styles/menu.css"
-import down from "../icons/down(1).png"
-import up from "../icons/upload.png"
+import down from "../icons/arrow-down-sign-to-navigate.png"
+import up from "../icons/up-arrow.png"
 import { useState } from "react"
 import instagram from "../images/Instagram_Glyph_Gradient.png"
 
 export function Menu (){
+
+    // useState for every dish, to show information onClick
     const[apt1, setApt1] = useState(false)
     const[apt2, setApt2] = useState(false)
     const[apt3, setApt3] = useState(false)
